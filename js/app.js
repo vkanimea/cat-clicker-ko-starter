@@ -21,11 +21,11 @@ var Cat = function() {
 }
 
 var ViewModel = function() {
-
+   var self = this;
    this.currCat =  ko.observable(new Cat());
 
   this.incrementCounter = function() {
-     this.clickCount(this.clickCount() + 1);
+     self.clickCount(self.clickCount() + 1);
   };
 
 }
